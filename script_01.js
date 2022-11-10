@@ -2,16 +2,16 @@
 
 // Entscheidungsstrukturen | control flow
 
-// Deklaration + Assigment
-const ageJohn = 30;
-const ageMark = 35;
+// // Deklaration + Assigment
+// const ageJohn = 30;
+// const ageMark = 35;
 
-// Deklaration
-let isJohnOlder, isJohnEqual;
+// // Deklaration
+// let isJohnOlder, isJohnEqual;
 
-// Test | Logische Aussage
-isJohnOlder = (ageJohn > ageMark);
-isJohnEqual = (ageJohn == ageMark);
+// // Test | Logische Aussage
+// isJohnOlder = (ageJohn > ageMark);
+// isJohnEqual = (ageJohn == ageMark);
 
 // Ausgabe
 // console.log("ageJohn: " + ageJohn);
@@ -73,31 +73,48 @@ isJohnEqual = (ageJohn == ageMark);
 
 /******* Fallunterscheidung / Switch|Case 1*******/
 
-const firstName = "Jane";
-let job;
+// const firstName = "Jane";
+// let job;
 
-job = "driver"    // .. fährt TAXI! / UBER
-job = "diver";      // .. taucht im Rhein!
-job = "artist";     // .. malt ein Bild!
-job = "pilot";      // .. macht etwas anderes! --> default
-job = "teacher";    // .. unterrichtet!
-job = "instructor";  // .. unterrichtet!
+// job = "driver"    // .. fährt TAXI! / UBER
+// job = "diver";      // .. taucht im Rhein!
+// job = "artist";     // .. malt ein Bild!
+// job = "pilot";      // .. macht etwas anderes! --> default
+// job = "teacher";    // .. unterrichtet!
+// job = "instructor";  // .. unterrichtet!
 
-switch (job) {
-    case "driver":
-        console.log(firstName + " fährt TAXI!");
+// switch (job) { // Test auf Gleichheit
+//     case "driver":
+//         console.log(firstName + " fährt TAXI!");
+//         break;
+//     case "diver":
+//         console.log(firstName + " taucht im Rhein!");
+//         break;
+//     case "artist":
+//         console.log(firstName + " malt ein Bild!");
+//         break;
+//     case "teacher":
+//     case "instructor":
+//         console.log(firstName + " unterrichtet!");
+//         break;
+//     default:
+//         console.log(firstName + " macht etwas anderes!")
+//         break;
+// }
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+const a = 1;
+
+switch (cond) {
+    case (a == 1):
+        console.log("a ist gleich 1")
         break;
-    case "diver":
-        console.log(firstName + " taucht im Rhein!");
-        break;
-    case "artist":
-        console.log(firstName + " malt ein Bild!");
-        break;
-    case "teacher":
-    case "instructor":
-        console.log(firstName + " unterrichtet!");
+    case (a == 2):
+        console.log("a ist gleich 2")
         break;
     default:
-        console.log(firstName + " macht etwas anderes!")
+        console.log("a hat einen anderen Wert")
         break;
 }
