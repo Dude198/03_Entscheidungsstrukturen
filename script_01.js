@@ -4,7 +4,7 @@
 
 // Deklaration + Assigment
 const ageJohn = 30;
-const ageMark = 30;
+const ageMark = 35;
 
 // Deklaration
 let isJohnOlder, isJohnEqual;
@@ -36,15 +36,37 @@ isJohnEqual = (ageJohn == ageMark);
 // mit Alternative
 // entweder ja oder nein
 
-// if(true)
-// if(false) 
+// // if(true)
+// // if(false) 
+// if(isJohnOlder)
+// {
+//     // JA-Zweig / true
+//     console.log("John ist älter");    
+// } 
+// else 
+// {
+//     // Nein-Zweig / false
+//     console.log("John ist jünger");    
+// }
+
+/************  Ternäre (ternary) Schreibweise ************/
+// console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+
+/********* IF - ELSE IF *********/
+// mit alternativen Fällen (älter,jünger, gleich alt)
+
 if(isJohnOlder)
 {
-    // JA-Zweig / true
     console.log("John ist älter");    
 } 
-else 
+// 1.Alternative  .....n
+else if(isJohnEqual)
 {
-    // Nein-Zweig / false
-    console.log("John ist jünger");    
+    console.log("John ist gleich alt");    
+}
+// evtl. weiter Alternative(n) else if (){}
+// gemeinsame Alternative
+else
+{
+    console.log("John ist jünger");
 }
